@@ -42,7 +42,8 @@ deploy-to-cluster:
 
     - kubectl:
         name: deploy to kubernetes
-        server: https://cqtmzdggm2t.eu-frankfurt-1.clusters.oci.oraclecloud.com:6443
+        server: $KUBERNETES_MASTER
+        #server: https://cqtmzdggm2t.eu-frankfurt-1.clusters.oci.oraclecloud.com:6443
         #username: $KUBERNETES_USERNAME
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
